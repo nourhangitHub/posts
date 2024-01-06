@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="card m-5"  *ngFor="let post of postDetails$ | async">
+        <div class="card-header">
+         Comment of {{post.id}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{post.name}}</h5>
+          <p class="card-text">{{post.email}}</p>
+          <p class="card-text">{{post.body}}</p>
+        </div>
+      </div>
+</div>
